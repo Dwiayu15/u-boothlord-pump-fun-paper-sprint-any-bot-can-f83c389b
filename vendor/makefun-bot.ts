@@ -198,7 +198,7 @@ export type ChainEvent = TradeEventRecord | CreateEventRecord | CompleteEventRec
 /** The latest post-trade reserves of a mint the bot holds or has an order pending in. */
 export interface Mark {
   mint: Pubkey;
-  /** Slot of the trade these reserves follow (the create slot until the first trade). */
+  /** Slot of the trade these reserves follow. */
   slot: number;
   virtual_token_reserves: U64;
   virtual_quote_reserves: U64;
